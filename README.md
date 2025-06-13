@@ -515,24 +515,64 @@ Retorna ranking dos bairros com mais transações.
 
 ## 📊 Estrutura dos Dados
 
-### Principais Colunas da Tabela "guia"
+### Estrutura Completa da Tabela "guia" (28 Colunas)
 
+#### 📅 **Informações Temporais**
 | Coluna | Tipo | Descrição | Exemplo |
 |--------|------|-----------|---------|
-| `N° do Cadastro (SQL)` | String | ID único do imóvel | "123.456.789-0" |
-| `Nome do Logradouro` | String | Endereço completo | "RUA AUGUSTA" |
+| `Mes/Ano` | String | Período da transação | "12/2023" |
+| `Data de Transação` | Date | Data exata da venda | "2023-12-15" |
+
+#### 🏠 **Identificação do Imóvel**
+| Coluna | Tipo | Descrição | Exemplo |
+|--------|------|-----------|---------|
+| `N° do Cadastro (SQL)` | String | ID único municipal | "123.456.789-0" |
+| `Nome do Logradouro` | String | Endereço (rua/avenida) | "RUA AUGUSTA" |
 | `Número` | String | Número do imóvel | "1234" |
-| `Bairro` | String | Localização | "VILA MADALENA" |
+| `Complemento` | String | Apartamento, bloco, etc. | "APTO 45" |
+| `Bairro` | String | Localização (158 opções) | "VILA MADALENA" |
+| `Referência` | String | Ponto de referência | "PRÓXIMO AO METRÔ" |
 | `CEP` | String | Código postal | "01234-567" |
-| `Valor de Transação` | Decimal | Preço declarado | 850000.00 |
-| `Data de Transação` | Date | Data da venda | "2023-06-15" |
+
+#### 💰 **Valores e Transação**
+| Coluna | Tipo | Descrição | Exemplo |
+|--------|------|-----------|---------|
 | `Natureza de Transação` | String | Tipo de operação | "VENDA" |
-| `Valor Venal` | Decimal | Valor de referência | 780000.00 |
-| `Tipo de Financiamento` | String | Como foi financiado | "CAIXA" |
-| `Área do Terreno` | Decimal | Tamanho do terreno | 250.00 |
-| `Área Construída` | Decimal | Área edificada | 120.00 |
-| `Uso (IPTU)` | String | Classificação uso | "RESIDENCIAL" |
-| `Padrão (IPTU)` | String | Padrão construtivo | "MÉDIO" |
+| `Valor de Transação (declarado pelo contribuinte)` | Decimal | Preço declarado | 850000.00 |
+| `Valor Venal de Referência` | Decimal | Valor oficial | 780000.00 |
+| `Proporção Transmitida (%)` | Decimal | Percentual vendido | 100.00 |
+| `Valor Venal de Referência (proporcional)` | Decimal | Valor ajustado | 780000.00 |
+| `Base de Cálculo adotada` | String | Base para impostos | "VALOR VENAL" |
+
+#### 💳 **Financiamento**
+| Coluna | Tipo | Descrição | Exemplo |
+|--------|------|-----------|---------|
+| `Tipo de Financiamento` | String | Instituição financeira | "CAIXA" |
+| `Valor Financiado` | Decimal | Montante financiado | 680000.00 |
+
+#### 📄 **Cartório e Registro**
+| Coluna | Tipo | Descrição | Exemplo |
+|--------|------|-----------|---------|
+| `Cartório de Registro` | String | Onde foi registrado | "1º OFICIAL DE REGISTRO" |
+| `Matrícula do Imóvel` | String | Número da matrícula | "12345" |
+| `Situação do SQL` | String | Status cadastral | "ATIVO" |
+
+#### 📐 **Dimensões e Características**
+| Coluna | Tipo | Descrição | Exemplo |
+|--------|------|-----------|---------|
+| `Área do Terreno (m2)` | Decimal | Tamanho do lote | 250.00 |
+| `Testada (m)` | Decimal | Frente do terreno | 10.00 |
+| `Fração Ideal` | Decimal | Percentual de propriedade | 0.0025 |
+| `Área Construída (m2)` | Decimal | Área edificada | 120.00 |
+
+#### 🏘️ **Classificação IPTU**
+| Coluna | Tipo | Descrição | Exemplo |
+|--------|------|-----------|---------|
+| `Uso (IPTU)` | String | Código de uso | "R1" |
+| `Descrição do uso (IPTU)` | String | Tipo de uso | "RESIDENCIAL" |
+| `Padrão (IPTU)` | String | Código do padrão | "M" |
+| `Descrição do padrão (IPTU)` | String | Padrão construtivo | "MÉDIO" |
+| `ACC (IPTU)` | String | Código adicional IPTU | "001" |
 
 ## 🔍 Arquivos Principais do Projeto
 
