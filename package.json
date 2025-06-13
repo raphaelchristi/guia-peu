@@ -1,0 +1,51 @@
+{
+  "name": "mcp-supabase-gemini-pipeline",
+  "version": "1.0.0",
+  "description": "MCP Pipeline com Supabase e Google Gemini - Sistema completo de integração",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "mcp-supabase-server": "./dist/index.js"
+  },
+  "scripts": {
+    "dev": "python3 -m adk_agent_samples.mcp_supabase_agent",
+    "web": "adk web",
+    "start": "python3 agent.py",
+    "install-adk": "pip install google-adk",
+    "setup": "npm install && pip install google-adk python-dotenv"
+  },
+  "keywords": [
+    "mcp",
+    "supabase",
+    "google-gemini",
+    "ai",
+    "database",
+    "natural-language"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "google-adk": "^1.0.0",
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "mcp": "^1.0.0",
+    "zod": "^3.22.4",
+    "dotenv": "^16.3.1",
+    "winston": "^3.11.0",
+    "lru-cache": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "tsx": "^4.6.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0",
+    "@vitest/coverage-v8": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
