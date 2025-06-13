@@ -257,32 +257,231 @@ adk web adk_agent_samples/agent.py
 http://localhost:8080
 ```
 
-### Exemplos de Perguntas Práticas
+## 💬 Guia Completo de Perguntas - Explore Seus Dados Imobiliários
 
-#### 📊 **Análises Gerais**
+### 📊 **1. Análises Exploratórias Básicas**
+
+#### Visão Geral dos Dados
 - "Quantos imóveis há no total na base de dados?"
 - "Qual é a estrutura da tabela de dados?"
 - "Mostre-me alguns exemplos de transações"
+- "Quantas colunas existem na tabela?"
+- "Quais são as principais informações disponíveis?"
 
-#### 🏘️ **Análises por Bairro**
+#### Primeiros Insights
+- "Me dê uma visão geral dos dados imobiliários"
+- "Qual é o período coberto pelos dados?"
+- "Quantos registros válidos temos?"
+- "Existe algum dado inconsistente?"
+
+### 🏘️ **2. Análises Geográficas e por Localização**
+
+#### Por Bairro
 - "Quais são os 10 bairros com mais transações?"
 - "Quantos imóveis foram vendidos no Ibirapuera?"
 - "Compare as vendas entre Vila Madalena e Jardins"
+- "Qual bairro tem o maior volume de negócios?"
+- "Liste todos os bairros disponíveis"
+- "Bairros com menos de 10 transações"
+- "Ranking completo de bairros por atividade"
 
-#### 💰 **Análises de Valores**
+#### Por Região/Zona
+- "Imóveis na zona oeste de São Paulo"
+- "Transações no centro da cidade"
+- "Bairros nobres vs bairros populares"
+- "Análise por proximidade ao metrô"
+
+#### Por Endereço Específico
+- "Imóveis na Rua Augusta"
+- "Transações na Avenida Paulista"
+- "Propriedades na Rua Oscar Freire"
+- "Busque por 'Consolação' no nome da rua"
+- "Endereços que contêm 'Jardim'"
+
+#### Por CEP
+- "Imóveis com CEP iniciado por 01310"
+- "Transações na região do CEP 04038"
+- "Agrupe por faixa de CEP"
+
+### 💰 **3. Análises Financeiras e de Valores**
+
+#### Estatísticas de Preços
 - "Qual é o valor médio dos imóveis por bairro?"
 - "Mostre-me os imóveis mais caros"
 - "Imóveis abaixo de R$ 500.000"
+- "Qual é o imóvel mais caro da base?"
+- "Valor mediano das transações"
+- "Faixa de preços mais comum"
 
-#### 📅 **Análises Temporais**
+#### Análises Comparativas
+- "Compare preços entre Moema e Vila Madalena"
+- "Bairros com maior valorização"
+- "Diferença entre valor de transação e valor venal"
+- "Análise de spread de preços por região"
+
+#### Segmentação de Mercado
+- "Imóveis de luxo (acima de R$ 2 milhões)"
+- "Mercado popular (até R$ 300 mil)"
+- "Faixa média (R$ 500 mil a R$ 1 milhão)"
+- "Distribuição percentual por faixa de preço"
+
+#### Análises de Valor por M²
+- "Preço por metro quadrado por bairro"
+- "Imóveis com melhor custo-benefício"
+- "Relação área construída vs valor"
+- "Comparação de valor por m² construído"
+
+### 📅 **4. Análises Temporais**
+
+#### Por Ano
 - "Quantas transações aconteceram em 2023?"
-- "Qual mês teve mais vendas?"
-- "Tendência de preços ao longo do tempo"
+- "Evolução anual das vendas"
+- "Compare 2022 vs 2023"
+- "Anos com maior atividade"
 
-#### 🔍 **Buscas Específicas**
-- "Imóveis na Rua Augusta"
+#### Por Mês
+- "Qual mês teve mais vendas?"
+- "Sazonalidade do mercado imobiliário"
+- "Meses de maior valorização"
+- "Tendência mensal de preços"
+
+#### Análise de Tendências
+- "Tendência de preços ao longo do tempo"
+- "Crescimento do mercado por período"
+- "Velocidade de vendas por trimestre"
+- "Ciclos do mercado imobiliário"
+
+#### Datas Específicas
+- "Transações em dezembro de 2023"
+- "Vendas no primeiro semestre"
+- "Atividade nos últimos 6 meses"
+
+### 🏠 **5. Análises por Características dos Imóveis**
+
+#### Tipo de Uso
+- "Quantos imóveis residenciais vs comerciais?"
+- "Análise por uso segundo IPTU"
+- "Imóveis mistos (comercial/residencial)"
+- "Propriedades industriais"
+
+#### Área e Tamanho
 - "Apartamentos com mais de 100m²"
-- "Financiamentos pela Caixa"
+- "Casas com terreno acima de 300m²"
+- "Imóveis compactos (até 50m²)"
+- "Relação área terreno vs área construída"
+- "Média de área construída por bairro"
+
+#### Padrão Construtivo
+- "Imóveis de padrão alto"
+- "Construções padrão médio"
+- "Distribuição por padrão IPTU"
+- "Relação padrão vs preço"
+
+### 💳 **6. Análises de Financiamento**
+
+#### Tipos de Financiamento
+- "Financiamentos pela Caixa Econômica"
+- "Transações à vista vs financiadas"
+- "Banco do Brasil vs outros bancos"
+- "Análise por instituição financeira"
+
+#### Padrões de Financiamento
+- "Percentual de financiamentos por bairro"
+- "Valor médio financiado vs valor total"
+- "Tendências de crédito imobiliário"
+
+### 🔍 **7. Buscas Específicas e Filtros Avançados**
+
+#### Combinações de Filtros
+- "Apartamentos no Itaim Bibi acima de R$ 800 mil"
+- "Casas na Vila Madalena com mais de 120m²"
+- "Imóveis comerciais no centro até R$ 600 mil"
+- "Financiamentos Caixa em bairros nobres"
+
+#### Pesquisas Detalhadas
+- "Imóveis com número par na rua"
+- "Propriedades com complemento 'apartamento'"
+- "Transações em ruas com 'São' no nome"
+- "Buscar por termos específicos no endereço"
+
+### 📊 **8. Análises Estatísticas Avançadas**
+
+#### Correlações
+- "Relação entre área e preço"
+- "Impacto do bairro no valor final"
+- "Correlação área terreno vs construída"
+
+#### Distribuições
+- "Distribuição de preços por quartil"
+- "Histograma de valores por bairro"
+- "Análise de outliers nos preços"
+
+#### Rankings e Top Lists
+- "Top 10 transações mais caras"
+- "Bairros com maior ticket médio"
+- "Ruas com mais atividade imobiliária"
+- "Ranking de valorização por região"
+
+### 🎯 **9. Análises de Mercado e Insights**
+
+#### Oportunidades
+- "Bairros subvalorizados para investimento"
+- "Imóveis com maior potencial de valorização"
+- "Regiões em crescimento"
+
+#### Comparações de Mercado
+- "Compare diferentes faixas de preço"
+- "Perfil do comprador por região"
+- "Análise competitiva entre bairros"
+
+#### Indicadores de Performance
+- "Velocidade de vendas por bairro"
+- "Liquidez do mercado por região"
+- "Indicadores de aquecimento do mercado"
+
+### 🔧 **10. Consultas Técnicas e de Sistema**
+
+#### Validação de Dados
+- "Registros com dados incompletos"
+- "Verificar consistência dos valores"
+- "Campos com informações faltantes"
+
+#### Estrutura e Metadados
+- "Tipos de dados de cada coluna"
+- "Estatísticas da base de dados"
+- "Qualidade e integridade dos dados"
+
+### 💡 **Dicas para Fazer Perguntas Eficazes**
+
+#### Como Formular Perguntas
+✅ **Boas práticas:**
+- Seja específico: "Imóveis no Ibirapuera acima de R$ 1 milhão"
+- Use contexto: "Compare preços entre bairros nobres"
+- Combine filtros: "Apartamentos financiados pela Caixa na zona sul"
+
+❌ **Evite:**
+- Perguntas muito vagas: "Me fale sobre imóveis"
+- Dados não disponíveis: "Qual a idade do proprietário?"
+- Informações futuras: "Preços em 2024"
+
+#### Exemplos de Progressão de Análise
+1. **Exploração inicial:** "Quantos imóveis temos no total?"
+2. **Foco em região:** "Quais bairros têm mais transações?"
+3. **Análise específica:** "Detalhes dos imóveis no Itaim Bibi"
+4. **Comparação:** "Compare Itaim Bibi com Vila Olimpia"
+5. **Insights:** "Qual bairro oferece melhor custo-benefício?"
+
+### 🚀 **Comece Sua Análise**
+
+**Para iniciantes:**
+- "Me dê uma visão geral dos dados imobiliários"
+- "Quais são os bairros mais ativos?"
+- "Mostre-me exemplos de diferentes tipos de imóvel"
+
+**Para análises avançadas:**
+- "Correlação entre área e preço por bairro"
+- "Análise temporal de valorização por região"
+- "Segmentação de mercado por tipo de financiamento"
 
 ## 🔧 Ferramentas MCP Implementadas
 
